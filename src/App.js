@@ -42,7 +42,7 @@ function App() {
         <input type="text" className='border rounded-md p-2 mr-2 flex-1 bg-white' placeholder='Add a new task' value={newTask} onChange={(e)=>setNewTask(e.target.value)} />
         <button className='bg-blue-500 text-white p-2 rounded' onClick={addTask}>Add</button>
       </div>
-      <ul >
+      <ul className='bg-amber-100' >
         {
           tasks.map((task,index)=>(
           <li key={index} className='bg-amber-100 flex items-center mb-2'>
